@@ -1,6 +1,7 @@
 import streamlit as st
 from PyPDF2 import PdfReader
-
+import sys
+st.write(sys.version)
 st.title("Basic CV Info")
 
 uploaded_file = st.file_uploader("Upload PDF", type="pdf")
